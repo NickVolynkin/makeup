@@ -4,6 +4,8 @@ EN | [RU](README-RU.md)
 
 ## What is Makeup?
 
+Makeup is a JavaScript library, providing a visual interface for isolated development and quick manual regression testing of web pages, built from absolutely independent blocks.
+
 Makeup is aimed at development and convenient quality assurance of markup on web projects. You'll certainly make use of Makeup if your design is based on independent blocks and you prioritize stability and reliability.
 
 See our interactive [Makeup promotion site](http://2gis.github.io/makeup)!
@@ -77,7 +79,7 @@ document.body.appendChild(s);
 
     That is as easy as:
 
-    ```js
+    ```javascript
     Makeup(params, templating);
     ```
 
