@@ -16,7 +16,7 @@ Makeup(params, templating);
 }
 ```
 
-## `item`
+### `item`
 
 `item` is either a block or a group. A group can contain other groups and/or blocks. Nesting depth is not limited. The `item` object has the following structure:
 
@@ -39,13 +39,13 @@ Makeup(params, templating);
 Any other properties can be added to an `item` object.
 
 
-## `styles`
+### `styles`
 
-If both an item and some of its parents have styles, those will be joined (by concatenation of defining strings). Styles are prioritized from root to end element with the latter having the highest priority.
+If both an `item` and some of its parents have `styles`, those will be joined (by concatenation of defining strings). Styles are prioritized from root to end element with the latter having the highest priority.
 
 ```js
 "styles": {
-    // {String} Styles, applied to the wrapper Стили, применяемые к врапперу
+    // {String} Styles, applied to the wrapper
     "wrapper": "color: red;",
 
     // {String} Styles, applied to the image container
@@ -66,7 +66,11 @@ templating(ctx) {
 };
 ```
 
-* `ctx` is an object, identifying the selected block and its parameters
-* `html` is the returned html code of the selected block.
-
 If no instance of `templating` was passed, Makeup uses the default function which searches for `$('.' + ctx.name)` in the DOM tree and takes its `outerHTML`.
+
+### `ctx`
+An object, identifying the selected block and its parameters
+
+### `html`
+
+The returned html code of the selected block.

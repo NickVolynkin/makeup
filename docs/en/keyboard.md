@@ -2,10 +2,10 @@
 
 ## Switching views
 
-* `1` – design view (png)
-* `2` – markup view (html)
-* `3` – transparent design over markup
-* `4` – transparent and inverted design over markup
+* `1` – Image view
+* `2` – Markup view
+* `3` – Markup and image (transparent image over markup)
+* `4` – Markup and inversed image (transparent and color-invesed image over markup)
 
 ## Transparency
 
