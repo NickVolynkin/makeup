@@ -20,8 +20,9 @@ Makeup lets you:
 
 Makeup supports keyboard shortcuts. They are listed in a [cheatsheet](docs/en/keyboard.md).
 
-Try all the features on the [Makeup demo page](http://2gis.github.io/makeup/demo)!
+Examples can be found in the [`demo/`](demo/) subfolder. Just open any `.html` file in your browser.
 
+Try all the features on the [Makeup demo page](http://2gis.github.io/makeup/demo)!
 
 ## Makeup Express
 
@@ -92,11 +93,8 @@ document.body.appendChild(s);
     If no instance of `templating` was passed, a built-in function will be used. It searches for `$('.' + ctx.name)` in the DOM tree and takes its `outerHTML`.
 
 
-  [Initialization data format](docs/format.md)
+  [Initialization data format](docs/en/format.md)
 
-## Examples
-
-Can be found in the [`demo/`](demo/) subfolder. Just open any `.html` file in your browser.
 
 ## Development
 
