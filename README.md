@@ -75,27 +75,13 @@ document.body.appendChild(s);
 
 3. Initialize the Makeup
 
+    That is as easy as:
+
     ```js
     Makeup(params, templating);
     ```
 
-   * `params` is an optional argument for parameters, including the blocks list. If no value was passed, all parameters will be taken with default values and the blocks list will be generated from the current DOM tree.
-   * `templating` is an optional function which accepts the name (and parameters) of a particular block and returns its html code:
-
-      ```js
-      templating(ctx) {
-          return html;
-      };
-      ```
-
-    * `ctx` is an object, identifying the selected block and its parameters
-    * `html` is the returned html code of the selected block.
-
-    If no instance of `templating` was passed, a built-in function will be used. It searches for `$('.' + ctx.name)` in the DOM tree and takes its `outerHTML`.
-
-
-  [Initialization data format](docs/en/format.md)
-
+    See the full [reference on initialization data format](docs/en/format.md).
 
 ## Development
 
@@ -126,6 +112,10 @@ You are welcome to take part in the development of Makeup. To start working, fol
     ```
 
     Demo page will then be available at [http://localhost:3333/demo](http://localhost:3333/demo).
+
+## License
+
+Makeup is published under the Mozilla Public License, version 2.0.
 
 ## node-makeup
 

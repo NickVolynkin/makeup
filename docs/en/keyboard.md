@@ -2,7 +2,7 @@
 
 ## Switching views
 
-* `1` – design view (phg)
+* `1` – design view (png)
 * `2` – markup view (html)
 * `3` – transparent design over markup
 * `4` – transparent and inverted design over markup

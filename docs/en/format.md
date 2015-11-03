@@ -1,6 +1,12 @@
 # Initialization data format
 
+```js
+Makeup(params, templating);
+```
+
 ## `params`
+
+`params` is an optional argument for parameters, including the blocks list. If no value was passed, all parameters will be taken with default values and the items list will be generated from the current DOM tree.
 
 ```js
 {
@@ -25,14 +31,17 @@
     // {Array} An array of nested items.
 
     "items": [
-        // {item}
-        ...
+    // {item}
+    ...
     ]
 }
 ```
 Any other properties can be added to an `item` object.
 
+
 ## `styles`
+
+If both an item and some of its parents have styles, those will be joined (by concatenation of defining strings). Styles are prioritized from root to end element with the latter having the highest priority.
 
 ```js
 "styles": {
@@ -46,4 +55,18 @@ Any other properties can be added to an `item` object.
     "markup": "box-shadow: 0 0 3px rgba(0, 0, 0, .3)"
 }
 ```
-If both an item and some of its parents have styles, those will be joined (by concatenation of defining strings). Styles are prioritized from root to end element with the latter having the highest priority.
+
+## `templating`
+
+`templating` is an optional function which accepts the name (and parameters) of a particular block and returns its html code:
+
+```js
+templating(ctx) {
+    return html;
+};
+```
+
+* `ctx` is an object, identifying the selected block and its parameters
+* `html` is the returned html code of the selected block.
+
+If no instance of `templating` was passed, Makeup uses the default function which searches for `$('.' + ctx.name)` in the DOM tree and takes its `outerHTML`.
