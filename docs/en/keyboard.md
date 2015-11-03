@@ -1,22 +1,22 @@
-# Горячие клавиши в интерфейсе Makeup
+# Markup keyboard shortcuts
 
-## Переключение режимов
+## Switching views
 
-* `1` – только дизайн;
-* `2` – только вёрстка;
-* `3` – вёрстка и дизайн совмещены с прозрачностью;
-* `4` – вёрстка и дизайн совмещены с прозрачностью и инверсией.
+* `1` – design view (phg)
+* `2` – markup view (html)
+* `3` – transparent design over markup
+* `4` – transparent and inverted design over markup
 
-## Прозрачность
+## Transparency
 
-* `[` – уменьшить значение прозрачности;
-* `]` – увеличить значение прозрачности.
+* `[` – decrease transparency;
+* `]` – increase transparency.
 
-## Масштаб
+## Zoom
 
-* `-` – уменьшить масштаб;
-* `+` – увеличить масштаб.
+* `-` – zoom out;
+* `+` – zoom in.
 
-## Меню
+## Sidebar
 
-* `~` – Свернуть или развернуть меню со списком блоков.
+* `~` – Toggle the sidebar with the blocks list

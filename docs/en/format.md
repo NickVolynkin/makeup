@@ -1,49 +1,49 @@
-# Формат входных данных
+# Initialization data format
 
-## Структура params
+## `params` structure
 
 ```js
 {
-    label: 'Название проекта',
+    label: 'project name',
     items: [item1, item2, ...]
     ... // @see source/js/params.js:102
 }
 ```
 
-## Структура item
+## `item` structure
 
-item - это блок, либо группа. Группироваться произвольно могут другие группы и блоки. Вложенность группировки не ограничена. Формат item:
+`item` is either a block or a group. A group can contain other groups and/or blocks. Nesting depth is not limited. The `item` object has the following structure:
+
 ```js
 {
-    // {String} Название, которе выведется в списке
+    // {String} Name to show in the list
     "name": "",
 
-    // {Object} Стили, применяемые к текущему и всем вложенным в item элементам. См. Структура объекта styles.
+    // {Object} Styles, applied to the current and all nested items. See the paragraph on styles.
     "styles": {},
 
-    // {Array} Массив item
+    // {Array} An array of nested items.
+
     "items": [
         // {item}
         ...
     ]
 }
 ```
+Any other properties can be added to an `item` object.
 
-В любой объект item можно добавлять любые другие свойства.
-
-## Структура объекта styles
+## `styles` structure
 
 ```js
 "styles": {
-    // {String} Стили, применяемые к врапперу
+    // {String} Styles, applied to the wrapper Стили, применяемые к врапперу
     "wrapper": "color: red;",
 
-    // {String} Стили, применяемые к контейнеру с изображением
+    // {String} Styles, applied to the image container
     "image": "background: green; border: 1px solid yellow;",
 
-    // {String} Стили, применяемые к контейнеру с версткой
+    // {String} Styles, applied to the markup container
     "markup": "box-shadow: 0 0 3px rgba(0, 0, 0, .3)"
 }
 ```
-
-Если styles есть у текущего item и каких-либо его родителей, эти стили объединяются (склеиваются строки стилей). Приоритет стилей идёт от корневого элемента к конечному (у конечного наибольший вес).
+If both an item and some of its parents have styles, those will be joined (by concatenation of defining strings). Styles are prioritized from root to end element with the latter having the highest priority.

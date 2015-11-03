@@ -77,15 +77,15 @@ document.body.appendChild(s);
     Makeup(params, templating);
     ```
 
-   * Here `params` is an optional argument for parameters, including the blocks list. If no value was passed, all parameters will be used with default values and the blocks list will be generated from current DOM tree.
+   * `params` is an optional argument for parameters, including the blocks list. If no value was passed, all parameters will be taken with default values and the blocks list will be generated from the current DOM tree.
    * `templating` is an optional function which accepts the name (and parameters) of a particular block and returns its html:
 
 
-    ```js
-    templating(ctx) {
-        return html;
-    };
-    ```
+      ```js
+      templating(ctx) {
+          return html;
+      };
+      ```
 
     * `ctx` is an object, identifying the selected block and its parameters
     * `html` is the returned html code of the selected block.
@@ -98,8 +98,7 @@ document.body.appendChild(s);
 
 ## Development
 
-If you would like to take part in development of Makeup,
-
+You are welcome to take part in the development of Makeup. To start working, follow the instruction:
 
 1. Make sure that you have *nodejs*, *npm* and *gulp* installed.
 
