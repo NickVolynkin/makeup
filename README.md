@@ -2,29 +2,31 @@
 
 EN | [RU](README-RU.md)
 
-# Makeup
+## What is Makeup?
 
 Makeup is aimed at development and convenient quality assurance of markup on web projects. You'll certainly make use of Makeup if your design is based on independent blocks and you prioritize stability and reliability.
 
 See our interactive [Makeup promotion site](http://2gis.github.io/makeup)!
 
-## Features
-
-Makeup is a JavaScript library, providing a visual interface for isolated development and quick manual regression testing of web pages, built from absolutely independent blocks.
+## Why should I use it?
 
 Makeup lets you:
 
-* Compare page design with the sample layout
-* Monitor blocks for modifications and content mismatching
-* Develop isolated blocks with ease
+* Compare page design with the sample layout,
+* Monitor blocks for modifications and mismatching content,
+* Develop isolated blocks with ease.
+
+Try all features of Makeup on the [Makeup demo page](http://2gis.github.io/makeup/demo)!
+
+Examples can be found in the [demo/](demo/) subfolder. Just open any `.html` file in your browser.
+
+## How can I use it?
+
+### Shortcuts
 
 Makeup supports keyboard shortcuts. They are listed in a [cheatsheet](docs/en/keyboard.md).
 
-Examples can be found in the [`demo/`](demo/) subfolder. Just open any `.html` file in your browser.
-
-Try all the features on the [Makeup demo page](http://2gis.github.io/makeup/demo)!
-
-## Makeup Express
+### Makeup Express
 
 Express version of Makeup can be launched on any website except those with HTTP header `content-security-policy`. To use it, run the following script from the developer tools console of your browser:
 
@@ -34,7 +36,7 @@ s.src ="//2gis.github.io/makeup/autoload/script.js";
 document.body.appendChild(s);
 ```
 
-## Quick start
+### Quick start with Makeup
 
 1. Make a web page with all resourses of your page's layout (markup, styles and images):
 
@@ -78,8 +80,7 @@ document.body.appendChild(s);
     ```
 
    * `params` is an optional argument for parameters, including the blocks list. If no value was passed, all parameters will be taken with default values and the blocks list will be generated from the current DOM tree.
-   * `templating` is an optional function which accepts the name (and parameters) of a particular block and returns its html:
-
+   * `templating` is an optional function which accepts the name (and parameters) of a particular block and returns its html code:
 
       ```js
       templating(ctx) {
@@ -98,7 +99,7 @@ document.body.appendChild(s);
 
 ## Development
 
-You are welcome to take part in the development of Makeup. To start working, follow the instruction:
+You are welcome to take part in the development of Makeup. To start working, follow this instruction:
 
 1. Make sure that you have *nodejs*, *npm* and *gulp* installed.
 
@@ -124,8 +125,8 @@ You are welcome to take part in the development of Makeup. To start working, fol
     npm start
     ```
 
-    Demo page will then be available at [localhost:3333/demo](http://localhost:3333/demo).
+    Demo page will then be available at [http://localhost:3333/demo](http://localhost:3333/demo).
 
+## node-makeup
 
-
-Another project named "node-makeup" had been published in *npm* under the name "makeup" till 23.10.2015. You can find it at [defunctzombie/node-makeup](https://github.com/defunctzombie/node-makeup).
+A project named "node-makeup" had been published in *npm* under the name "makeup" till 23.10.2015. You can find it at [defunctzombie/node-makeup](https://github.com/defunctzombie/node-makeup).

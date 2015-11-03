@@ -9,13 +9,13 @@
 
 ## Transparency
 
-* `[` – decrease transparency;
-* `]` – increase transparency.
+* `[` – decrease transparency
+* `]` – increase transparency
 
 ## Zoom
 
-* `-` – zoom out;
-* `+` – zoom in.
+* `-` – zoom out
+* `+` – zoom in
 
 ## Sidebar
 

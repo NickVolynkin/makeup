@@ -1,6 +1,6 @@
 # Initialization data format
 
-## `params` structure
+## `params`
 
 ```js
 {
@@ -10,7 +10,7 @@
 }
 ```
 
-## `item` structure
+## `item`
 
 `item` is either a block or a group. A group can contain other groups and/or blocks. Nesting depth is not limited. The `item` object has the following structure:
 
@@ -32,7 +32,7 @@
 ```
 Any other properties can be added to an `item` object.
 
-## `styles` structure
+## `styles`
 
 ```js
 "styles": {
