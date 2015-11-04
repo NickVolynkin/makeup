@@ -1,8 +1,9 @@
+
+<p align="right">[English](README.md) | Русский</p>
+
 ![MakeUP logo](docs/makeup.png)
-
+<br><br>
 [![Build Status](https://travis-ci.org/2gis/makeup.svg)](https://travis-ci.org/2gis/makeup) [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/2gis/makeup?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
-[English](README.md) | Русский
 ## Что такое MakeUP?
 
 MakeUP – инструмент для вёрстки и приятного контроля за качеством вёрстки на веб-проектах.

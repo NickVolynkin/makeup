@@ -1,8 +1,11 @@
-![MakeUP logo](docs/makeup.png)
+<p align="right">English | [Русский](README-RU.md)</p>
 
+
+![MakeUP logo](docs/makeup.png)
+<br><br>
 [![Build Status](https://travis-ci.org/2gis/makeup.svg)](https://travis-ci.org/2gis/makeup) [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/2gis/makeup?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-English | [Русский](README-RU.md)
+
 ## What is MakeUP?
 
 MakeUP is a tool for development and comfortable quality assurance of markup on web projects. You'll certainly find it useful if your design is based on independent blocks and you prioritize stability and reliability.
