@@ -1,5 +1,5 @@
 
-<p align="right">[English](README.md) | Русский</p>
+<p align="right"><a href="README.md">English</a> | Русский</p>
 
 ![MakeUP logo](docs/makeup.png)
 <br><br>

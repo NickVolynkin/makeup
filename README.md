@@ -1,4 +1,4 @@
-<p align="right">English | [Русский](README-RU.md)</p>
+<p align="right">English | <a href="README-RU.md">Русский</a></p>
 
 
 ![MakeUP logo](docs/makeup.png)
