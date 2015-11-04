@@ -2,6 +2,8 @@
 
 EN | [RU](README-RU.md)
 
+# Makeup
+
 ## What is Makeup?
 
 Makeup is a tool for development and convenient quality assurance of markup on web projects. You'll certainly find it useful if your design is based on independent blocks and you prioritize stability and reliability.
@@ -18,15 +20,19 @@ Makeup lets you:
 * Monitor blocks for modifications and mismatching content,
 * Develop isolated blocks with ease.
 
+###Examples
+
 Try all features of Makeup on the [Makeup demo page](http://2gis.github.io/makeup/demo)!
 
-Examples can be found in the [demo/](demo/) subfolder. Just open any `.html` file in your browser.
-
-## How can I use it?
+Examples be found in the [demo/](demo/) subfolder. Just open any `.html` file in your browser.
 
 ### Shortcuts
 
-Makeup supports keyboard shortcuts. They are listed in a [cheatsheet](docs/en/keyboard.md).
+Makeup has convenient keyboard shortcuts. See the [cheatsheet](docs/en/keyboard.md).
+
+## How can I use it?
+
+
 
 ### Makeup Express
 
