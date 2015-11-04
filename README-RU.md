@@ -1,26 +1,21 @@
+![MakeUP logo](docs/makeup.svg)
+
 [![Build Status](https://travis-ci.org/2gis/makeup.svg)](https://travis-ci.org/2gis/makeup) [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/2gis/makeup?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-[EN](README.md) | RU
+[English](README.md) | Русский
+## Что такое MakeUP?
 
-# Makeup
+MakeUP – инструмент для вёрстки и приятного контроля за качеством вёрстки на веб-проектах.
 
-## Что такое Makeup?
+Вы поладите с MakeUP, если ваша вёрстка основана на независимых блоках, а вам важна стабильность и надежность проекта.
 
-Makeup – инструмент для вёрстки и приятного контроля за качеством вёрстки на веб-проектах.
+Если говорить формально, MakeUP – это js-библиотека, которая предоставляет визуальный интерфейс для изолированной разработки и быстрого ручного регрессионого тестирования вёрстки, основанной на абсолютно-независимых блоках.
 
-Вы поладите с Makeup, если ваша верстка основана на независимых блоках, а вам важна стабильность и надежность проекта.
+Обязательно зайдите на [промо-сайт MakeUP](http://2gis.github.io/makeup)!
 
-Если говорить формально, Makeup – это js-библиотека, которая предоставляет визуальный интерфейс для изолированной разработки и быстрого ручного регрессионого тестирования вёрстки, основанной на абсолютно-независимых блоках.
+## Чем MakeUP может быть мне полезен?
 
-Обязательно зайдите на [промо-сайт Makeup](http://2gis.github.io/makeup)!
-
-
-
-
-
-## Чем Makeup может быть мне полезен?
-
-Makeup предназначен для:
+MakeUP предназначен для:
 
 * Сравнения вёрстки блоков с исходными дизайн-макетами,
 * Контроля за состояниями блоков (модификации блоков, разный контент),
@@ -28,23 +23,25 @@ Makeup предназначен для:
 
 ### Примеры
 
-Посмотреть на фичи Makeup можно на [демо-сайте](http://2gis.github.io/makeup/demo).
+Посмотреть на фичи MakeUP можно на [демо-сайте](http://2gis.github.io/makeup/demo).
 
 Все примеры можно найти в папке [demo/](demo/): достаточно открыть в браузере один из `.html` файлов.
 
 ### Горячие клавиши
 
-Для удобства работы в Makeup есть набор горячих клавиш. Смотрите
+Для удобства работы в MakeUP есть набор горячих клавиш. Смотрите
 [шпаргалку](docs/ru/keyboard.md).
 
-## Как начать использовать Makeup?
+## Как начать использовать MakeUP?
 
-### Экспресс-версия Makeup
+### Экспресс-версия MakeUP
 
-Экспресс-версию Makeup можно загрузить почти на любой сайт (кроме тех, где выставлен HTTP заголовок content-security-policy). Для этого скопируйте и выполните строчку кода в консоли Dev Tools вашего браузера:
+Экспресс-версию MakeUP можно загрузить почти на любой сайт (кроме тех, где выставлен HTTP заголовок content-security-policy). Для этого скопируйте и выполните строчку кода в консоли Dev Tools вашего браузера:
 
 ```js
-var s=document.createElement('script');s.src ="//2gis.github.io/makeup/autoload/script.js";document.body.appendChild(s)
+var s=document.createElement('script');
+s.src ="//2gis.github.io/makeup/autoload/script.js";
+document.body.appendChild(s)
 ```
 
 ### Быстрый старт
@@ -55,7 +52,7 @@ var s=document.createElement('script');s.src ="//2gis.github.io/makeup/autoload/
   <!DOCTYPE html>
   <html lang="en">
   <head>
-      <title>Makeup</title>
+      <title>MakeUP</title>
       <link rel="stylesheet" href="style.css"> <!-- Стили проекта -->
   </head>
   <body>
@@ -64,13 +61,13 @@ var s=document.createElement('script');s.src ="//2gis.github.io/makeup/autoload/
   </html>
   ```
 
-1. Подключите два файла: скрипт и стили Makeup.
+1. Подключите два файла: скрипт и стили MakeUP.
 
   ```html
   <!DOCTYPE html>
   <html>
   <head>
-      <title>Makeup</title>
+      <title>MakeUP</title>
       <link rel="stylesheet" href="style.css">
 
       <script src="makeup.js"></script><!-- Сам Мейкап -->
@@ -89,21 +86,14 @@ var s=document.createElement('script');s.src ="//2gis.github.io/makeup/autoload/
   ```js
   Makeup(params, templating);
   ```
-  Подробное описание формата данных для инициализации вынесено в [отдельный документ](docs/ru/format.md).
 
-
-
-
-
-
-
-
+  Смотрите подробное [описание формата данных для инициализации](docs/ru/format.md).
 
 ## Разработка
 
 Если вы хотите разрабатывать сам Мейкап – это здорово. Чтобы начать, следуйте инструкции:
 
-1. Убедитесь, что у вас установлены `nodejs`, `npm` и `gulp`.
+1. Убедитесь, что у вас установлены *nodejs*, *npm* и *gulp*.
 
 1. Форкните этот репозиторий и клонируйте свой форк:
 
@@ -128,8 +118,10 @@ var s=document.createElement('script');s.src ="//2gis.github.io/makeup/autoload/
 
 Демо будет доступно по адресу [localhost:3333/demo](http://localhost:3333/demo).
 
+## Лицензия
 
+MakeUP опубликован под лицензией Mozilla Public License, version 2.0.
 
-До 23 октября 2015 года под именем «makeup» в npm находился другой проект — «node-makeup». Вы можете получить доступ к проекту «node-makeup» в [гите](https://github.com/defunctzombie/node-makeup).
+## node-makeup
 
-Another project ("node-makeup") has been published in npm with name "makeup" till 23.10.2015. You can find previous project in [github with name "node-makeup"](https://github.com/defunctzombie/node-makeup).
+До 23 октября 2015 года под именем «makeup» в *npm* находился другой проект — «node-makeup». Вы можете получить доступ к проекту «node-makeup» на [defunctzombie/node-makeup](https://github.com/defunctzombie/node-makeup).

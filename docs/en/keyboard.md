@@ -1,4 +1,4 @@
-# Markup keyboard shortcuts
+# MakeUP keyboard shortcuts
 
 ## Switching views
 
