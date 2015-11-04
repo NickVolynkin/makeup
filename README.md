@@ -1,4 +1,4 @@
-![MakeUP logo](docs/makeup.svg)
+![MakeUP logo](docs/makeup.png)
 
 [![Build Status](https://travis-ci.org/2gis/makeup.svg)](https://travis-ci.org/2gis/makeup) [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/2gis/makeup?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
