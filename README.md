@@ -1,8 +1,8 @@
 <p align="right">English | <a href="README-RU.md">Русский</a></p>
 
 
-![MakeUP logo](docs/makeup.png)
-<br><br>
+# ![MakeUP logo](docs/makeup.png)
+
 [![Build Status](https://travis-ci.org/2gis/makeup.svg)](https://travis-ci.org/2gis/makeup) [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/2gis/makeup?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 
@@ -12,7 +12,7 @@ MakeUP is a tool for development and comfortable quality assurance of markup on 
 
 MakeUP is a JavaScript library. It provides visual interface for isolated development and quick manual regression testing of web pages, built from independent blocks.
 
-See our interactive [MakeUP promotion site](http://2gis.github.io/makeup)!
+Check out the interactive [MakeUP promotion site](http://2gis.github.io/makeup)!
 
 ## Why should I use it?
 
@@ -33,8 +33,6 @@ Examples can be found in the [demo/](demo/) subfolder. Just open any `.html` fil
 MakeUP has convenient keyboard shortcuts. See the [cheatsheet](docs/en/keyboard.md).
 
 ## How can I use it?
-
-
 
 ### MakeUP Express
 
@@ -63,7 +61,7 @@ document.body.appendChild(s);
     </html>
     ```
 
-2. Link the files for MakeUP script and styles to your page:
+1. Link the MakeUP script and styles files to your page:
 
    ```html
     <!DOCTYPE html>
@@ -83,7 +81,7 @@ document.body.appendChild(s);
     </html>
     ```
 
-3. Initialize the MakeUP
+1. Initialize the MakeUP
 
     ```javascript
     Makeup(params, templating);
@@ -112,7 +110,7 @@ You are welcome to take part in the development of MakeUP. To start working, fol
     cd makeup
     ```
 
-2. Launch MakeUP with
+1. Launch MakeUP with
 
     ```bash
     npm i
