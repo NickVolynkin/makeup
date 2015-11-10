@@ -1,22 +1,23 @@
 
 <p align="right"><a href="README.md">English</a> | Русский</p>
 
-# ![MakeUP logo](docs/makeup.png)
+# ![Makeup logo](docs/makeup.png)
 
 [![Build Status](https://travis-ci.org/2gis/makeup.svg)](https://travis-ci.org/2gis/makeup) [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/2gis/makeup?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-## Что такое MakeUP?
 
-MakeUP – инструмент для вёрстки и приятного контроля за качеством вёрстки на веб-проектах.
+## Что такое Makeup?
 
-Вы поладите с MakeUP, если ваша вёрстка основана на независимых блоках, а вам важна стабильность и надежность проекта.
+Makeup – инструмент для вёрстки и приятного контроля за качеством вёрстки на веб-проектах.
 
-Если говорить формально, MakeUP – это js-библиотека, которая предоставляет визуальный интерфейс для изолированной разработки и быстрого ручного регрессионого тестирования вёрстки, основанной на абсолютно-независимых блоках.
+Вы поладите с Makeup, если ваша вёрстка основана на независимых блоках, а вам важна стабильность и надежность проекта.
 
-Обязательно зайдите на [промо-сайт MakeUP](http://2gis.github.io/makeup)!
+Если говорить формально, Makeup – это JS-библиотека, которая предоставляет визуальный интерфейс для изолированной разработки и быстрого ручного регрессионого тестирования вёрстки, основанной на абсолютно-независимых блоках.
 
-## Чем MakeUP может быть мне полезен?
+Обязательно зайдите на [промо-сайт Makeup](http://2gis.github.io/makeup)!
 
-MakeUP предназначен для:
+## Чем Makeup может быть мне полезен?
+
+Makeup предназначен для:
 
 * Сравнения вёрстки блоков с исходными дизайн-макетами,
 * Контроля за состояниями блоков (модификации блоков, разный контент),
@@ -24,20 +25,20 @@ MakeUP предназначен для:
 
 ### Примеры
 
-Посмотреть на фичи MakeUP можно на [демо-сайте](http://2gis.github.io/makeup/demo).
+Посмотреть на фичи Makeup можно на [демо-сайте](http://2gis.github.io/makeup/demo).
 
 Все примеры можно найти в папке [demo/](demo/): достаточно открыть в браузере один из `.html` файлов.
 
 ### Горячие клавиши
 
-Для удобства работы в MakeUP есть набор горячих клавиш. Смотрите
+Для удобства работы в Makeup есть набор горячих клавиш. Смотрите
 [шпаргалку](docs/ru/keyboard.md).
 
-## Как начать использовать MakeUP?
+## Как начать использовать Makeup?
 
-### Экспресс-версия MakeUP
+### Экспресс-версия Makeup
 
-Экспресс-версию MakeUP можно загрузить почти на любой сайт (кроме тех, где выставлен HTTP заголовок content-security-policy). Для этого скопируйте и выполните строчку кода в консоли Dev Tools вашего браузера:
+Экспресс-версию Makeup можно загрузить почти на любой сайт (кроме тех, где выставлен HTTP заголовок content-security-policy). Для этого скопируйте и выполните строчку кода в консоли Dev Tools вашего браузера:
 
 ```js
 var s=document.createElement('script');
@@ -53,7 +54,7 @@ document.body.appendChild(s)
   <!DOCTYPE html>
   <html lang="en">
   <head>
-      <title>MakeUP</title>
+      <title>Makeup</title>
       <link rel="stylesheet" href="style.css"> <!-- Стили проекта -->
   </head>
   <body>
@@ -62,17 +63,17 @@ document.body.appendChild(s)
   </html>
   ```
 
-1. Подключите два файла: скрипт и стили MakeUP.
+1. Подключите два файла: скрипт и стили Makeup.
 
   ```html
   <!DOCTYPE html>
   <html>
   <head>
-      <title>MakeUP</title>
+      <title>Makeup</title>
       <link rel="stylesheet" href="style.css">
 
-      <script src="makeup.js"></script><!-- Сам Мейкап -->
-      <link rel="stylesheet" href="makeup.css"> <!-- Стили Мейкапа -->
+      <script src="makeup.js"></script><!-- Сам Makeup -->
+      <link rel="stylesheet" href="makeup.css"> <!-- Стили Makeup -->
   </head>
   <body>
       <div style="display: none;">
@@ -82,7 +83,7 @@ document.body.appendChild(s)
   </html>
   ```
 
-1. Инициализируйте Мейкап
+1. Инициализируйте Makeup
 
   ```js
   Makeup(params, templating);
@@ -92,7 +93,7 @@ document.body.appendChild(s)
 
 ## Разработка
 
-Если вы хотите разрабатывать сам Мейкап – это здорово. Чтобы начать, следуйте инструкции:
+Если вы хотите разрабатывать сам Makeup – это здорово. Чтобы начать, следуйте инструкции:
 
 1. Убедитесь, что у вас установлены *nodejs*, *npm* и *gulp*.
 
@@ -121,7 +122,7 @@ document.body.appendChild(s)
 
 ## Лицензия
 
-MakeUP опубликован под лицензией Mozilla Public License, version 2.0.
+Makeup опубликован под лицензией Mozilla Public License, version 2.0.
 
 ## node-makeup
 
